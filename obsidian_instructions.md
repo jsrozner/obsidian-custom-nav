@@ -1,10 +1,17 @@
 # Background
 - This repo originally forked from [repo](https://github.com/obsidianmd/obsidian-sample-plugin)
 ## Releasing new releases
-1. Update manifest.json and version.json: 
+1. Update manifest.json and version.json:
+ 
+	For yarnv4
 	```
- 	# rebuild!
- 	yarn prod_all
+	# rebuild!
+	yarn prod_all
+	yarn version [major | minor | patch]
+	yarn run version
+	 ```
+ 	Below was for yarn v1, I think
+	```
 	# first update manifest.json with min app version
  	# yarn creates a version with a v, but obsidian doesn't want that? 
 	yarn version --new-version [major | minor | patch] --no-git-tag-version
